@@ -6,7 +6,7 @@
   	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
 	<!-- CSS -->
-	<link rel="stylesheet" type="text/css" href="form.css">
+	<link rel="stylesheet" type="text/css" href="styles.css">
 
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -18,23 +18,23 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
-	<h1>Simple Form</h1>
-		<div class="container">
-	<form action="kthnx.php" method="post">
+	<h1>Simple Signup Form</h1>
+	<div class="container">
+		<form action="kthnx.php" method="post">
 		<input type="text" name="firstName" placeholder="First Name">
 		<input type="text" name="lastName" placeholder="Last Name">
 		<input type="email" name="email" placeholder="Email">
 		<input type="password" name="password1" placeholder="Password">
 		<input type="password" name="password2" placeholder="Confirm Password">
-	
-	
+
+
 		<input type="radio" id="male" name="gender"><label for="male">Male</label>
 		<input type="radio" id="female" name="gender"><label for="female">Female</label>
 		<input type="radio" id="other" name="gender"><label for="other">Other</label>
-	
+
 
 		<input type="submit" name="Submit">
-		</div>
+	</div>
 	</form>
 </body>
 </html>
