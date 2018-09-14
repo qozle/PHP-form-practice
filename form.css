@@ -1,0 +1,86 @@
+body {
+	background-color: #e8f3f8;
+	font: 1em/1.5 sans-serif;
+}
+
+h1 {
+	text-align: center;
+	font-size: 50px;
+	color: #722f37;
+}
+
+form {
+	margin: 20px auto;
+	width: 320px;
+	color: #722f37;
+}
+
+input {
+	padding: 10px;
+	font-size: inherit;
+}
+
+input[type="text"] {
+	display: blocks;
+	margin-bottom: 25px;
+	width: 100%;
+	border: 2px solid #722f37;
+	background: #faf6d9;
+}
+
+input[type="email"] {
+	display: blocks;
+	margin-bottom: 25px;
+	width: 100%;
+	border: 2px solid #722f37;
+	background: #faf6d9;
+}
+
+input[type="password"] {
+	display: blocks;
+	margin-bottom: 25px;
+	width: 100%;
+	border: 2px solid #722f37;
+	background: #faf6d9;
+}
+
+input[type="radio"] {
+	margin: 0 8px 25px 18px;
+}
+
+input[type="radio"]:first-child {
+	margin-left: 0;
+}
+
+input[type="submit"] {
+	width: 344px;
+	height: 45px;
+	border: none;
+	background: #722f37;
+	color: white;
+}
+
+input[type="submit"]:hover {
+	width: 344px;
+	height: 45px;
+	border: solid #722f37;
+	background: white;
+	color: #722f37;
+}
+}
+input[type="submit"]:focus {
+	width: 344px;
+	height: 45px;
+	border: solid #722f37;
+	background: white;
+	color: #722f37;
+}
+
+input:focus {
+	background: white;
+}
+
+input[type="radio"]:checked + label {
+	font-weight: bold;
+	font-size: 18px;
+}
