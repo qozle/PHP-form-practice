@@ -26,42 +26,28 @@ $password = "193267abc";
 $dbname = "testFormDB";
 
 // Create connection
-$conn = new mysqli($servername, $username, $password);
+$conn = new mysqli($servername, $username, $password, $dbname);
 
 // Check connection
 if ($conn->connect_error) {
 	die("Connection failed: " . $conn->connect_error);
 }
 
-// SQL to create a database
-$sql = "CREATE DATABASE testFormDB";
-if ($conn->query($sql) === TRUE) {
-	echo "Database created successfully";
-} else {
-	echo "Error creating database: " . $conn->connect_error;
-}
+$sql = "INSERT INTO SignUp (firstname, lastname, email, website, comment) VALUES ("
 
-$conn->close();
 
-// Now connect to that database (did I have to kill the connection?  There's a better way to do this I'm pretty sure)
-$conn = new mysqli($servername, $username, $password, $dbname);
 
-// Check connection
-if ($conn->connect_error) {
-	die("Connection failed =( : " . $conn->connect_error);
-}
 
-// Now make some SQL to make a table...
-$sql = "CREATE TABLE SignUp (
-id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY, 
-firstname VARCHAR(30) NOT NULL,
-lastname VARCHAR(30) NOT NULL,
-email VARCHAR(50),
-website VARCHAR(50),
-comment VARCHAR(256),
-gender SET('Male', 'Female', 'Other'),
-reg_date TIMESTAMP
-)";
+// $sql = "CREATE TABLE SignUp (
+// id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY, 
+// firstname VARCHAR(30) NOT NULL,
+// lastname VARCHAR(30) NOT NULL,
+// email VARCHAR(50),
+// website VARCHAR(50),
+// comment VARCHAR(256),
+// gender SET('Male', 'Female', 'Other'),
+// reg_date TIMESTAMP
+// )";
 
 // Check that it works
 if ($conn->query($sql) === TRUE) {
