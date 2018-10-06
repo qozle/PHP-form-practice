@@ -170,9 +170,9 @@ function test_input($data) {
 		<span class="error">* <?php echo $genderErr;?></span>
 		<br><br>
 		<!-- PASSWORDS 1 & 2 -->
-		<input type="text" name="pWord1" placeholder="Create password" value="<?php echo $pWord1;?>"><span class="error">* <?php echo $pWord1Err;?></span><br><span class="error">*<?php echo $pWordErr;?></span>
+		<input type="text" name="pWord1" placeholder="Create password" value="<?php echo $pWord1;?>"><span class="error">* <?php echo $pWord1Err;?></span><br><span class="error"><?php echo $pWordErr;?></span>
 		<br><br>
-		<input type="text" name="pWord2" placeholder="Confirm password" value="<?php echo $pWord2;?>"><span class="error">* <?php echo $pWord1Err;?></span><br></span><span class="error">*<?php echo $pWordErr;?></span>
+		<input type="text" name="pWord2" placeholder="Confirm password" value="<?php echo $pWord2;?>"><span class="error">* <?php echo $pWord1Err;?></span><br></span><span class="error"><?php echo $pWordErr;?></span>
 		<br><br>
 		<input type="submit" name="submit" value="Submit">
 	</form>
